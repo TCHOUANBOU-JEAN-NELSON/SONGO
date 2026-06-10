@@ -3,5 +3,62 @@
 }
 
 body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('songo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:chocolate; 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 7fr 1fr;
+    grid-template-areas: "header"
+                            "main"
+                            "footer"; 
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+header h1{
     
+    
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "article aside";
+
+}
+
+article{
+    grid-area: article;
+    text-decoration: underline;
+    overflow: auto;
+}
+
+aside{
+    grid-area: aside;
+}
+aside div.user{
+    margin: 0px;
+}
+button{
+    width: 13%;
+    background-color: chocolate;
+    border-color: chocolate;
+    border-radius: 20%;
+}
+button p{
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 35%;
+    height: 50%;
+}
+
+footer{
+    grid-area: footer;
 }
