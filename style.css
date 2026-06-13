@@ -21,10 +21,6 @@ header{
     justify-content: center;
 }
 
-header h1{
-    
-    
-}
 
 main{
     grid-area: main;
@@ -36,7 +32,6 @@ main{
 
 article{
     grid-area: article;
-    text-decoration: underline;
     overflow: auto;
 }
 
@@ -51,6 +46,13 @@ button{
     background-color: chocolate;
     border-color: chocolate;
     border-radius: 20%;
+    font-size: 1.3em;
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    box-shadow: 5px 5px black;
 }
 button p{
     border: 5px solid black;
